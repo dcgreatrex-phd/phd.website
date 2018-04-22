@@ -1,0 +1,2245 @@
+<html>
+<head>
+<style>
+body
+{
+text-align:center;
+margin-left:0px;
+margin-right:0px;
+margin-top:0px;
+margin-bottom:0px;
+padding-left:0px;
+padding-right:0px;
+padding-top:0px;
+padding-bottom:0px;
+border-top-width: 0px;
+border-right-width-value: 0px;
+border-bottom-width: 0px;
+border-left-width-value: 0px;
+border-top-style: none;
+border-right-style-value: none;
+border-bottom-style: none;
+border-left-style-value: none;
+border-image-source: none;
+border-image-slice: 100% 100% 100% 100%;
+border-image-width: 1 1 1 1;
+border-image-outset: 0 0 0 0;
+border-image-repeat: stretch stretch;
+font-family: inherit;
+font-style: inherit;
+font-variant: inherit;
+font-weight: inherit;
+font-size: inherit;
+line-height: inherit;
+font-size-adjust: inherit;
+font-stretch: inherit;
+vertical-align: baseline;
+width:100%;
+height:100%;
+text-align:center;
+background-color:;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+    background-image: url('CSS/Images/dust.png');
+}
+
+#container
+{
+background-color:;
+margin-top:200px;
+margin-bottom:200px;
+margin-left:0px;
+margin-right:0px;
+padding:0px;
+}
+
+
+/* NAVIGATION*/
+
+#top
+{
+height: 40px;
+top:0px;
+background-color:#545454;
+width:100%;
+padding:0px;
+min-width: 960px;
+max-width: 1440px;
+margin-left: auto;
+margin-right: auto;
+z-index:1000;
+}
+
+
+#navigation
+{
+width:960px;
+margin-right:auto;
+margin-left:auto;
+text-align:left;
+border:0px;
+padding-top:0px;
+margin-top:0px;
+}
+
+#navbar
+{
+height:30px;
+padding-top:10px;
+background-color:;
+margin-top:0px;
+border:0px;
+}
+
+
+a.nav:link,a.nav:visited
+{
+
+font-family:verdana;
+font-weight:Normal;
+font-size:13px;
+color:white;
+background-color: #545454;
+padding-top:10px;
+padding-bottom:13px;
+padding-left:30px;
+padding-right:30px;
+text-decoration:none;
+text-align:center;
+text-transform:capitalize;
+margin-top:0px;
+margin-bottom:0px;
+border-top:0px;
+border-bottom:0px;
+transition: color 0.5s ease;
+}
+
+a.nav2:link,a.nav2:visited
+{
+
+font-family:verdana;
+font-weight:Normal;
+font-size:13px;
+color:black;
+background-color: #FEEED4;
+padding-top:10px;
+padding-bottom:13px;
+padding-left:30px;
+padding-right:30px;
+text-decoration:none;
+text-align:center;
+text-transform:capitalize;
+margin-top:0px;
+margin-bottom:0px;
+border-top:0px;
+border-bottom:0px;
+transition: color 0.5s ease;
+}
+
+#instructions
+{
+width:640px;
+margin-left: auto; 
+margin-right: auto;
+margin-top:30px;
+margin-bottom:200px;
+text-align:left;
+background-color:white;
+border-radius:5px;
+border-color:black;
+border-style: solid;
+border-width:1px;
+padding:20px;
+}
+
+#instructions2
+{
+width:640px;
+margin-left: auto; 
+margin-right: auto;
+margin-top:0px;
+margin-bottom:100px;
+text-align:left;
+background-color:white;
+border-radius:5px;
+border-color:black;
+border-style: solid;
+border-width:1px;
+padding:20px;
+}
+
+
+
+#image
+{
+padding-top:0px;
+padding-bottom:0px;
+background-color:;
+}
+
+#sound
+{
+margin-top:30px;
+margin-bottom:0px;
+background-color:;
+}
+
+#iframe
+{
+margin-top:10px;
+margin-bottom:0px;
+background-color:;
+}
+
+#link
+{
+font-size: 16px;
+color:black;
+text-decoration:none;
+font-family:Palatino Linotype;
+font-weight:normal
+}
+
+h1
+{
+text-align:center;
+font-size:30px;
+color:black;
+text-decoration:underline;
+font-family:Palatino Linotype;
+font-weight:normal
+}
+
+h2
+{
+font-size:18px;
+color:black;
+font-family:Palatino Linotype;
+font-weight:normal
+}
+
+#dur
+{
+font-size: 16px;
+color:black;
+text-decoration:none;
+}
+
+#scoredata
+{
+width:500px;
+height:120px;
+background-color:white;
+padding:10px;
+text-align:center;
+margin-left: auto; 
+margin-right: auto;
+margin-bottom:200px;
+border-radius:5px;
+border-color:black;
+border-style: solid;
+border-width:1px;
+}
+
+#familiarity
+{
+background-color:;
+width:220px;
+float:left;
+font-family:Palatino Linotype;
+font-weight:normal
+text-align:left;
+}
+
+#preference
+{
+background-color:;
+width:220px;
+float:right;
+font-family:Palatino Linotype;
+font-weight:normal
+text-align:left;
+}
+
+.optionbox
+{
+padding:5px;
+font-size:14px;
+margin-bottom:10px;
+}
+
+
+.continue
+{
+width:350px;
+height:45px;
+font-family:verdana;
+font-weight:light;
+font-size:16px;
+padding:0px;
+margin:0px;
+color:#F8F8F8;
+background-color:#008A00;
+text-transform:capitalise;
+border-radius:5px;
+border-color:black;
+border-style: solid;
+border-width:1px;
+transition: background-color 0.2s ease;
+-webkit-appearance: none;
+}
+
+.continue:hover
+{
+text-decoration:none;
+background-color:#007A00;
+color:#F8F8F8;
+border-color:black;
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+-webkit-appearance: none;
+}
+
+#continue_div
+{
+height:60px;
+}
+
+#explanation1
+{
+width:500px;
+height:60px;
+}
+
+
+</style>
+</head>
+<body>
+<div id='top'>
+    <div id="navigation">	 	
+    	<nav id="navbar">
+	    <a href="" class="nav">STAGE 1) Option preview</a>
+	    <a href="" class="nav2">STAGE 2) Option familiarity & preferences</a>
+        </nav> 
+    </div>    	    	
+    
+</div>
+<br><br>
+<h1>Stage 2<br><br> Choice experiment</h1><br><br>
+<div id = "instructions">
+    <h2>1) Below are C.D images with corresponding sound clips. We want to know your familiarity and preference for each option. <br><br><br>
+    2) <b>Look at each C.D cover one at a time and listen to the very short sound clip once.</b> Rate your familiarity and preference for each option using the tick boxes provided before moving on to the next option. Do not spend a long time on each option.<br><br><br>
+    3) By familiarity, we mean your familiarity with the category that the image and music represents. You do not need to know the specific recording of a track for it to be be familiar. You might for instance be very familiar with the artist or composer thus making the option familiar. We expect however that some of the music will be unfamiliar to you. That is not a problem, simply give it a low familiarity rating when asked.<br><br><br>
+    4) By preference, we are simply referring to how much you like it. Do not think too hard about the decision and record your intuitive response.<br><br><br>  
+    5) Ensure that you rate each option and that a tick box is selected for every question. <br><br><br>
+    6) At the end of the page, fill in a short questionnaire and then press the green "Submit" button to finish the study <br></h2>
+</div>
+<div id="dur"> 
+</div><br><br>
+<form action="" method="post" enctype="multipart/form-data">
+
+
+        <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/60.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/60_350.wav" target="frame60" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame60" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+        
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/5.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/5_350.wav" target="frame5" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame5" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/6.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/6_350.wav" target="frame6" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame6" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/7.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/7_350.wav" target="frame7" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame7" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/8.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/8_350.wav" target="frame8" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame8" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/9.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/9_350.wav" target="frame9" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame9" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/10.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/10_350.wav" target="frame10" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame10" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/11.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/11_350.wav" target="frame11" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame11" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/13.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/13_350.wav" target="frame13" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame13" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/14.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/14_350.wav" target="frame14" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame14" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/4.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/4_350.wav" target="frame4" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame4" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/15.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/15_350.wav" target="frame15" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame15" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/16.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/16_350.wav" target="frame16" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame16" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+          <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/34.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/34_350.wav" target="frame34" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame34" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/17.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/17_350.wav" target="frame17" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame17" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/18.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/18_350.wav" target="frame18" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame18" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/19.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/19_350.wav" target="frame19" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame19" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/20.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/20_350.wav" target="frame20" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame20" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/21.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/21_350.wav" target="frame21" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame21" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/22.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/22_350.wav" target="frame22" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame22" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/23.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/23_350.wav" target="frame23" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame23" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/24.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/24_350.wav" target="frame24" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame24" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+        <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/55.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/55_350.wav" target="frame55" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame55" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/25.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/25_350.wav" target="frame25" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame25" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/26.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/26_350.wav" target="frame26" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame26" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+ <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/1.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/1_350.wav" target="frame1" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame1" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/3.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/3_350.wav" target="frame3" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame3" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/27.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/27_350.wav" target="frame27" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame27" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/28.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/28_350.wav" target="frame28" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame28" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/29.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/29_350.wav" target="frame29" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame29" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/30.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/30_350.wav" target="frame30" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame30" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/31.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/31_350.wav" target="frame31" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame31" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+    <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/2.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/2_350.wav" target="frame2" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame2" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/32.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/32_350.wav" target="frame32" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame32" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/33.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/33_350.wav" target="frame33" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame33" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/35.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/35_350.wav" target="frame35" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame35" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/36.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/36_350.wav" target="frame36" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame36" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/37.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/37_350.wav" target="frame37" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame37" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/38.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/38_350.wav" target="frame38" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame38" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/39.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/39_350.wav" target="frame39" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame39" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/40.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/40_350.wav" target="frame40" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame40" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/41.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/41_350.wav" target="frame41" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame41" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/42.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/42_350.wav" target="frame42" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame42" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/43.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/43_350.wav" target="frame43" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame43" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/44.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/44_350.wav" target="frame44" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame44" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/45.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/45_350.wav" target="frame45" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame45" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+        <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/46.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/46_350.wav" target="frame46" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame46" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+        <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/47.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/47_350.wav" target="frame47" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame47" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+        <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/48.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/48_350.wav" target="frame48" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame48" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+        <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/49.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/49_350.wav" target="frame49" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame49" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+
+        <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/50.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/50_350.wav" target="frame50" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame50" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+
+        <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/51.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/51_350.wav" target="frame51" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame51" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+            <hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/12.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/12_350.wav" target="frame12" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame12" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+
+        <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/52.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/52_350.wav" target="frame52" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame52" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+        <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/53.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/53_350.wav" target="frame53" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame53" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+        <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/54.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/54_350.wav" target="frame54" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame54" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+        <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/55.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/55_350.wav" target="frame55" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame55" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+        <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/56.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/56_350.wav" target="frame56" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame56" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+        <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/57.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/57_350.wav" target="frame57" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame57" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+        <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/58.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/58_350.wav" target="frame58" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame58" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+
+        <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/59.jpg" width="361" height="361"><br>
+        </div>
+        <div id="sound">   
+            <a href="images/phd_exp/sound/59_350.wav" target="frame59" id = "link">Click here to listen</a><br>
+            
+            <iframe height="50" width="300" id = "iframe" name="frame59" frameBorder="0"></iframe>
+        </div><br>
+        <div id = "scoredata">   
+            <div id="familiarity">
+                1) How familiar is this? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_F" value="1">1   
+                <input type="radio" name="'.$value.'_F" value="2">2   
+                <input type="radio" name="'.$value.'_F" value="3">3   
+                <input type="radio" name="'.$value.'_F" value="4">4   
+                <input type="radio" name="'.$value.'_F" value="5">5   
+            </div>
+            <div id="preference">
+                2) How much do you like it? <br><br> 1 = low 5 = high<br><br>
+                <input type="radio" name="'.$value.'_P" value="1">1   
+                <input type="radio" name="'.$value.'_P" value="2">2   
+                <input type="radio" name="'.$value.'_P" value="3">3   
+                <input type="radio" name="'.$value.'_P" value="4">4   
+                <input type="radio" name="'.$value.'_P" value="5">5   
+            </div>
+        </div>
+
+<hr><br><br><br><br>
+<h1>Questionnaire</h1><br><br>
+<div id = "instructions2">
+    <select id="difficulty" name="Gender" class="optionbox" autocomplete="off">
+    <option value="Male or Female?">Male or Female?</option>
+	<option value="Male or Female?">Male</option>
+    <option value="Male or Female?">Female</option>
+    </select><br><br> 
+
+    
+    <select id="genre" name="Age" class="optionbox" autocomplete="off">
+    <option value="'.$value.'">Select your age group</option>
+    <option value="'.$value.'"><16</option>
+    <option value="'.$value.'">16-20</option>
+    <option value="'.$value.'">20-24</option>
+    <option value="'.$value.'">25-30</option>
+    <option value="'.$value.'">30-40</option>
+    <option value="'.$value.'">40-55</option>
+    <option value="'.$value.'">55+</option>
+    </select><br><br> 
+
+    <select id="genre" name="Genre" class="optionbox" autocomplete="off">
+	<?php
+	// create content array
+	$genre = array("Select your favorite genre", "Rock", "Pop", "Jazz", "Classical", "Folk", "Dance");
+	foreach ($genre as $value) {
+	<option value="'.$value.'">Select your favorite genre</option>
+    <option value="'.$value.'">Rock</option>
+    <option value="'.$value.'">Pop</option>
+    <option value="'.$value.'">Jazz</option>
+    <option value="'.$value.'">Classical</option>
+    <option value="'.$value.'">Folk</option>
+    <option value="'.$value.'">Dance</option>
+    </select> 
+    
+    <h2> Did you find it difficult to rate your familiarity and preference for each option? <br> </h2>
+    <select id="difficulty" name="Difficulty" class="optionbox" autocomplete="off">
+	<option value="'.$value.'">Select either Yes or No</option>
+    <option value="'.$value.'">Yes</option>
+    <option value="'.$value.'">No</option>
+    </select> 
+
+    <h2> If your answer was yes, why did you find the task hard? <br> </h2>
+    <textarea class='explaination1' id='explanation1' name='explanation1'></textarea><br/>
+    <h2> Did you use the sound clip when rating each option? It is ok to say no. <br> </h2>
+    <select id="soundclip" name="soundclip" class="optionbox" autocomplete="off">
+	<option value="Select either Yes or No">Select either Yes or No</option>
+    <option value="Yes">Yes</option>  
+    <option value="No">No</option>   
+    </select> 
+
+    <h2> Were the sound clips helpful for remembering familiarity and preference? If not, why not?<br> </h2>
+    <textarea class='explaination1' id='explanation1' name='explanation2'></textarea><br/>
+    <h2> How clear were the task instructions? Could they be improved? <br> </h2>
+    <textarea class='explaination1' id='explanation1' name='instructions'></textarea><br/>
+    <h2> Are you a practicing musician? <br> </h2>
+    <select id="musician" name="Musician" class="optionbox" autocomplete="off">
+	<option value="Select either Yes or No">Select either Yes or No</option>
+    <option value="Yes">Yes</option>  
+    <option value="No">No</option> 
+    </select>
+
+    <h2> On average, how much time do you spend listening to music every day? <br> </h2>
+    <select id="listening" name="Listening" class="optionbox" autocomplete="off">
+	<option value="'.$value.'">Select a time group</option>	
+    <option value="'.$value.'"><30mins</option> 
+    <option value="'.$value.'">up to 1 hour</option> 
+    <option value="'.$value.'">1-2 hours</option> 
+    <option value="'.$value.'">2-3 hours</option> 
+    <option value="'.$value.'">3 hours +</option> 
+    </select>
+
+    <h2> What is your profession?<br> </h2>
+    <input type="input" name="profession2"><br>
+    <h2> Do you have any other comments about the task? <br> </h2>
+    <textarea class='explaination1' id='explanation1' name='comments'></textarea><br/>
+
+</div>
+<div id="continue_div">
+    <input type="submit" id="submit" name="submit_ul" value="Submit to finish" class="continue">
+</div>    
+</form>  
+</body>
+</html>

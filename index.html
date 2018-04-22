@@ -1,0 +1,1005 @@
+<html>
+<head>
+<style>
+body
+{
+text-align:center;
+margin-left:0px;
+margin-right:0px;
+margin-top:0px;
+margin-bottom:0px;
+padding-left:0px;
+padding-right:0px;
+padding-top:0px;
+padding-bottom:0px;
+border-top-width: 0px;
+border-right-width-value: 0px;
+border-bottom-width: 0px;
+border-left-width-value: 0px;
+border-top-style: none;
+border-right-style-value: none;
+border-bottom-style: none;
+border-left-style-value: none;
+border-image-source: none;
+border-image-slice: 100% 100% 100% 100%;
+border-image-width: 1 1 1 1;
+border-image-outset: 0 0 0 0;
+border-image-repeat: stretch stretch;
+font-family: inherit;
+font-style: inherit;
+font-variant: inherit;
+font-weight: inherit;
+font-size: inherit;
+line-height: inherit;
+font-size-adjust: inherit;
+font-stretch: inherit;
+vertical-align: baseline;
+width:100%;
+height:100%;
+text-align:center;
+background-color:;
+
+}
+
+
+html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+    background-image: url('CSS/Images/dust.png');
+}
+
+
+
+#container
+{
+background-color:;
+margin-top:200px;
+margin-bottom:200px;
+margin-left:0px;
+margin-right:0px;
+padding:0px;
+}
+
+/* NAVIGATION*/
+
+#top
+{
+height: 40px;
+top:0px;
+background-color:#545454;
+width:100%;
+padding:0px;
+min-width: 960px;
+max-width: 1440px;
+margin-left: auto;
+margin-right: auto;
+z-index:1000;
+}
+
+
+#navigation
+{
+width:960px;
+margin-right:auto;
+margin-left:auto;
+text-align:left;
+border:0px;
+padding-top:0px;
+margin-top:0px;
+}
+
+#navbar
+{
+height:30px;
+padding-top:10px;
+background-color:;
+margin-top:0px;
+border:0px;
+}
+
+
+a.nav:link,a.nav:visited
+{
+
+font-family:verdana;
+font-weight:Normal;
+font-size:13px;
+color:white;
+background-color: #545454;
+padding-top:10px;
+padding-bottom:13px;
+padding-left:30px;
+padding-right:30px;
+text-decoration:none;
+text-align:center;
+text-transform:capitalize;
+margin-top:0px;
+margin-bottom:0px;
+border-top:0px;
+border-bottom:0px;
+transition: color 0.5s ease;
+}
+
+a.nav2:link,a.nav2:visited
+{
+
+font-family:verdana;
+font-weight:Normal;
+font-size:13px;
+color:black;
+background-color: #FEEED4;
+padding-top:10px;
+padding-bottom:13px;
+padding-left:30px;
+padding-right:30px;
+text-decoration:none;
+text-align:center;
+text-transform:capitalize;
+margin-top:0px;
+margin-bottom:0px;
+border-top:0px;
+border-bottom:0px;
+transition: color 0.5s ease;
+}
+
+#instructions
+{
+width:640px;
+margin-left: auto; 
+margin-right: auto;
+margin-top:30px;
+margin-bottom:200px;
+text-align:left;
+background-color:white;
+border-radius:5px;
+border-color:black;
+border-style: solid;
+border-width:1px;
+padding:20px;
+}
+
+
+#image
+{
+padding-top:0px;
+padding-bottom:0px;
+background-color:;
+}
+
+#sound
+{
+margin-top:30px;
+margin-bottom:0px;
+background-color:;
+}
+
+#iframe
+{
+margin-top:10px;
+margin-bottom:0px;
+background-color:;
+}
+
+#link
+{
+font-size: 16px;
+color:black;
+text-decoration:none;
+font-family:Palatino Linotype;
+font-weight:normal
+}
+
+h1
+{
+text-align:center;
+font-size:30px;
+color:black;
+text-decoration:underline;
+font-family:Palatino Linotype;
+font-weight:normal
+}
+
+h2
+{
+font-size:18px;
+color:black;
+font-family:Palatino Linotype;
+font-weight:normal
+}
+
+#dur
+{
+font-size: 16px;
+color:black;
+text-decoration:none;
+font-family:Palatino Linotype;
+font-weight:normal
+}
+
+.continue
+{
+width:350px;
+height:45px;
+font-family:verdana;
+font-weight:light;
+font-size:16px;
+padding:0px;
+margin:0px;
+color:#F8F8F8;
+background-color:#008A00;
+text-transform:capitalise;
+border-radius:5px;
+border-color:black;
+border-style: solid;
+border-width:1px;
+transition: background-color 0.2s ease;
+-webkit-appearance: none;
+}
+
+.continue:hover
+{
+text-decoration:none;
+background-color:#007A00;
+color:#F8F8F8;
+border-color:black;
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+-webkit-appearance: none;
+}
+
+#continue_div
+{
+height:300px;
+}
+
+
+
+</style>
+</head>
+<body>
+<div id='top'>
+    <div id="navigation">	 	
+    	<nav id="navbar">
+	    <a href="" class="nav2">STAGE 1) Option preview</a>
+	    <a href="" class="nav">STAGE 2) Option familiarity & preferences</a>
+        </nav> 
+    </div>    	    	    
+</div>
+<br><br>
+<h1>Stage 1 <br><br> Choice experiment</h1><br>
+<div id = "instructions">
+    <h2>1) Look and listen to all of the C.D items below whilst thinking about how familiar they are to you and how much you like them. In the next stage of the survey you will be asked to rate your familiarity and preference for each option on a scale of 1-5. <br><br><br>
+    2) When you have familiarised yourself with all of the tracks press the green 'Continue to Stage 2' button at the bottom of the page to start stage 2 of the survey.<br><br><br>
+    3) If possible wear headphones to listen to the music and complete the survey in one sitting. The entire process should take up to 40 minutes. <br><br><br>
+    In this stage you <b> do not </b> have to listen to the entire music clip. Once you are able to identify your familiarity and preference feel free to move on to the next piece of music. You can spend as little or as much time as you like on this page. </h2>
+</div>    
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/1.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/1.mp3" target="frame1" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame1" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/2.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/2.mp3" target="frame2" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame2" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/3.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/3.mp3" target="frame3" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame3" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/4.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/4.mp3" target="frame4" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame4" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/5.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/5.mp3" target="frame5" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame5" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/6.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/6.mp3" target="frame6" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame6" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/7.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/7.mp3" target="frame7" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame7" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/8.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/8.mp3" target="frame8" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame8" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/9.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/9.mp3" target="frame9" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame9" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/10.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/10.mp3" target="frame10" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame10" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/11.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/11.mp3" target="frame11" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame11" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/12.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/12.mp3" target="frame12" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame12" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/13.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/13.mp3" target="frame13" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame13" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/14.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/14.mp3" target="frame14" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame14" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/15.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/15.mp3" target="frame15" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame15" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/16.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/16.mp3" target="frame16" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame16" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/17.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/17.mp3" target="frame17" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame17" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/18.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/18.mp3" target="frame18" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame18" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/19.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/19.mp3" target="frame19" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame19" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/20.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/20.mp3" target="frame20" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame20" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/21.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/21.mp3" target="frame21" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame21" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/22.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/22.mp3" target="frame22" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame22" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/23.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/23.mp3" target="frame23" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame23" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/24.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/24.mp3" target="frame24" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame24" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/25.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/25.mp3" target="frame25" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame25" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/26.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/26.mp3" target="frame26" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame26" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/27.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/27.mp3" target="frame27" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame27" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/28.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/28.mp3" target="frame28" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame28" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/29.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/29.mp3" target="frame29" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame29" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/30.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/30.mp3" target="frame30" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame30" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/31.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/31.mp3" target="frame31" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame31" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/32.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/32.mp3" target="frame32" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame32" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/33.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/33.mp3" target="frame33" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame33" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/34.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/34.mp3" target="frame34" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame34" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/35.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/35.mp3" target="frame35" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame35" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/36.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/36.mp3" target="frame36" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame36" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/37.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/37.mp3" target="frame37" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame37" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/38.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/38.mp3" target="frame38" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame38" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/39.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/39.mp3" target="frame39" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame39" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/40.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/40.mp3" target="frame40" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame40" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/41.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/41.mp3" target="frame41" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame41" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/42.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/42.mp3" target="frame42" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame42" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/43.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/43.mp3" target="frame43" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame43" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/44.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/44.mp3" target="frame44" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame44" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/45.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/45.mp3" target="frame45" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame45" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/46.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/46.mp3" target="frame46" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame46" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/47.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/47.mp3" target="frame47" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame47" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/48.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/48.mp3" target="frame48" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame48" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/49.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/49.mp3" target="frame49" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame49" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/50.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/50.mp3" target="frame50" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame50" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/51.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/51.mp3" target="frame51" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame51" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/52.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/52.mp3" target="frame52" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame52" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/53.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/53.mp3" target="frame53" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame53" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/54.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/54.mp3" target="frame54" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame54" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/55.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/55.mp3" target="frame55" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame55" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/56.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/56.mp3" target="frame56" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame56" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/57.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/57.mp3" target="frame57" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame57" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/58.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/58.mp3" target="frame58" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame58" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/59.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/59.mp3" target="frame59" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame59" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<hr>
+    <div id="container">
+        <div id="image">
+            <img src="images/phd_exp/img/60.jpg" width="361" height="361"><br>
+        </div>
+    <div id="sound">
+            <a href="images/phd_exp/sound2/60.mp3" target="frame60" id = "link">Click here to listen</a><br>      
+            <iframe height="50" width="300" id = "iframe" name="frame60" frameBorder="0"></iframe>
+        </div>
+    </div>
+<br><br>
+
+<div id="continue_div">
+<form action="phd_exp_2.html" method="get">
+    <button type="submit" id="submit" class="continue">Continue to Stage 2</button>
+</form>    
+</div>
+</body>
+</html>
